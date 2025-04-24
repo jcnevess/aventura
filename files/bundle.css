@@ -1,5 +1,7 @@
 /*           CSS RESET        */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -8,23 +10,35 @@
   padding: 0;
 }
 
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
 }
 
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
 /*      USER STYLES         */
 :root {
-  --color-background-primary: #F5F5F5;
+  --color-background-primary: #f5f5f5;
   --color-background-secondary: #000000;
-  --color-text-primary: #FFFFFF;
+  --color-text-primary: #ffffff;
   --color-text-secondary: #000000;
-  --color-highlight: #E81E1E;
+  --color-highlight: #e81e1e;
   --measure-navbar-height: 7.5dvh;
+}
+
+@font-face {
+  font-family: "Karla";
+  src: url("./Karla-Variable.ttf");
 }
 
 html {
@@ -83,7 +97,6 @@ html {
   height: calc(100dvh - var(--measure-navbar-height));
 }
 
-
 .navbar-items {
   color: var(--color-text-primary);
   display: flex;
@@ -114,8 +127,7 @@ html {
   border-radius: 5px;
   border: 0;
   cursor: pointer;
-  transition: transform 0.3s ease-out,
-  box-shadow 0.3s ease-out;
+  transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
 }
 
 .button-cta:hover,
@@ -168,18 +180,18 @@ html {
 }
 
 .advantages {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    padding-block: 4rem;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-block: 4rem;
+  align-items: center;
 }
 
 .advantages-heading {
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.6rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.6rem;
 }
 
 .advantages-grid {
@@ -189,28 +201,27 @@ html {
 }
 
 .advantage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 3rem;
-    gap: 0.75rem;
-    max-width: 360px;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+  gap: 0.75rem;
+  max-width: 360px;
 }
 
 .advantage-icon {
-    color: var(--color-highlight);
-    width: 60px;
-    height: auto;
+  color: var(--color-highlight);
+  width: 60px;
+  height: auto;
 }
 
 .advantage-title {
-    text-transform: capitalize;
-    font-size: 1.3rem;
+  text-transform: capitalize;
+  font-size: 1.3rem;
 }
 
 .advantage-text {
-    text-align: center;
+  text-align: center;
 }
 
 .references {
@@ -272,7 +283,7 @@ html {
   border-bottom: 1px solid var(--color-text-secondary);
 }
 
-.testimonial-text{
+.testimonial-text {
   margin-block: 2rem 0;
   max-width: 480px;
   margin-inline: auto;
@@ -306,11 +317,11 @@ html {
   padding: 0.2em 0;
   overflow: hidden;
   text-decoration: none;
-  color: var(--color-text-primary)
+  color: var(--color-text-primary);
 }
 
 .action-link::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
